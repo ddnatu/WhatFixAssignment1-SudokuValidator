@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./app.css" />
+    <title>WhatFix Assignment</title>
+  </head>
+  <body>
+
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <section class="mainContainer">
+          <section class="menuLeft">Menu on the left</section>
+          <section class="contentRight">Content on the right</section>
+      </section>
+
+      <input type="text" id="enterSudokuNumber" />
+
+      <section class="nextContainer">
+        <button ng-click="checkValidity();">Sudoku</button>
+      </section>
+
+      <section class="nextContainer">
+          <button ng-click="someOtherCallee();">Read From File</button>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>   
+    <script src="myApp.js"></script>
+    <script src="myCtrl.js"></script>
+    <script src="myService.js"></script>
+    <script src="myDirective.js"></script> 
+  </body>
+</html
