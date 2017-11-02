@@ -66,7 +66,8 @@ app.controller('myCtrl', function($scope) {
                 //console.log('oneDArray', oneDArray);
                 twoDArray.push(oneDArray);
             }
-            console.log($scope.isValidSudoku(twoDArray));
+            //console.log($scope.isValidSudoku(twoDArray));
+            alert($scope.isValidSudoku(twoDArray));
             //console.log('twoDArray', twoDArray);
         }, this);
     }
