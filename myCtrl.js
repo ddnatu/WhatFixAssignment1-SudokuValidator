@@ -29,12 +29,12 @@ app.controller('myCtrl', function($scope) {
                 }
             }
         }
-        for(i = 0; i < inputTwoDArr.length; i+=Math.sqrt(length)){
-            for(j = 0; j < inputTwoDArr.length; j+=Math.sqrt(length)){
+        for(i = 0; i < inputTwoDArr.length; i+=Math.sqrt(inputTwoDArr.length)){
+            for(j = 0; j < inputTwoDArr.length; j+=Math.sqrt(inputTwoDArr.length)){
                 dupCheck = [];
                 
-                for(var x = 0; x < Math.sqrt(length); x++){
-                    for(var y = 0; y < Math.sqrt(length); y++){
+                for(var x = 0; x < Math.sqrt(inputTwoDArr.length); x++){
+                    for(var y = 0; y < Math.sqrt(inputTwoDArr.length); y++){
                         if(inputTwoDArr[i+x][j+y] !== '.' && dupCheck[inputTwoDArr[i+x][j+y]]){
                             return false;
                         } else {
